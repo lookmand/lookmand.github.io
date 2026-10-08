@@ -1,1 +1,92 @@
-txt
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Cyber Spiderman</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Futuristic Look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Background Canvas for Interactive Spider Web -->
+    <canvas id="spiders-web-canvas"></canvas>
+
+    <div class="container">
+        <!-- Header / Logo -->
+        <header class="cyber-header">
+            <img src="images/spider-logo.png" alt="Spider Logo" class="spider-logo-img">
+            <p class="cyber-tagline">THE MARRIAGE OF TWO UNIVERSES</p>
+        </header>
+
+        <!-- Main Invitation Card -->
+        <main class="invitation-card">
+            <h1 class="glow-text-red">LOOKMAN</h1>
+            <span class="cyber-ampersand">&</span>
+            <h1 class="glow-text-blue">NUR</h1>
+
+            <p class="opening-text">
+                Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri hari bahagia pernikahan kami.
+            </p>
+
+            <!-- Groom & Bride Photos Section -->
+            <section class="couple-section">
+                <div class="profile-box groom-box">
+                    <div class="photo-frame">
+                        <img src="images/lookman.jpg" alt="Foto Pengantin Pria" class="profile-photo">
+                    </div>
+                    <h2>Rizky Lookmantyo</h2>
+                    <p>Putra dari Bpk. Richard Parker & Ibu Mary Parker</p>
+                </div>
+
+                <div class="profile-box bride-box">
+                    <div class="photo-frame">
+                        <img src="images/nur.jpg" alt="Foto Pengantin Wanita" class="profile-photo">
+                    </div>
+                    <h2>Nurlaela.</h2>
+                    <p>Putri dari Bpk. Philip Watson & Ibu Madeline Watson</p>
+                </div>
+            </section>
+
+            <!-- Countdown Timer -->
+            <section class="countdown-section">
+                <h3 class="section-title">WAKTU MENUJU ACARA</h3>
+                <div id="countdown" class="countdown-container">
+                    <div class="time-block"><span id="days">00</span><p>Hari</p></div>
+                    <div class="time-block"><span id="hours">00</span><p>Jam</p></div>
+                    <div class="time-block"><span id="minutes">00</span><p>Menit</p></div>
+                    <div class="time-block"><span id="seconds">00</span><p>Detik</p></div>
+                </div>
+            </section>
+
+            <!-- Event Details -->
+            <section class="event-details">
+                <div class="event-box">
+                    <h3 class="glow-text-red">AKAD NIKAH</h3>
+                    <p class="date">Sabtu, 20 Desember 2026</p>
+                    <p class="time">Pukul 09.00 - 10.00 WIB</p>
+                    <p class="place"><strong>Gedung Daily Bugle Hall</strong><br>Jl. Web-Slinger No. 101, Kota Tonggara</p>
+                </div>
+                
+                <div class="event-box">
+                    <h3 class="glow-text-blue">RESEPSI</h3>
+                    <p class="date">Sabtu, 20 Desember 2026</p>
+                    <p class="time">Pukul 11.00 - selesai WIB</p>
+                    <p class="place"><strong>Gedung Daily Bugle Hall</strong><br>Jl. Web-Slinger No. 101, Kota Tonggara</p>
+                </div>
+            </section>
+
+            <!-- Map Link -->
+            <footer class="action-section">
+                <a href="https://maps.google.com" target="_blank" class="cyber-btn">PETUNJUK LOKASI (GOOGLE MAPS)</a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+              </html>
+  
