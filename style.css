@@ -1,0 +1,280 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #050811;
+    color: #ffffff;
+    font-family: 'Rajdhani', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Canvas for Interactive Webs */
+#spiders-web-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: all;
+    background-image: linear-gradient(135deg, #050811 0%, #0b1528 100%);
+}
+
+/* Container & Layout */
+.container {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Header Elements */
+.cyber-header {
+    margin-bottom: 40px;
+}
+
+.spider-logo-img {
+    width: 80px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #ff003c);
+    animation: pulse 2s infinite alternate;
+}
+
+.cyber-tagline {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    color: #00f0ff;
+    margin-top: 10px;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.6);
+}
+
+/* Glassmorphism Invitation Card */
+.invitation-card {
+    background: rgba(11, 21, 40, 0.65);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 240, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.1), inset 0 0 15px rgba(255, 0, 60, 0.05);
+}
+
+/* Typography & Glows */
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+
+.glow-text-red {
+    color: #ff003c;
+    text-shadow: 0 0 15px rgba(255, 0, 60, 0.8), 0 0 30px rgba(255, 0, 60, 0.4);
+}
+
+.glow-text-blue {
+    color: #00f0ff;
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.8), 0 0 30px rgba(0, 240, 255, 0.4);
+}
+
+.cyber-ampersand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+    display: block;
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+.opening-text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 30px auto;
+    color: #cbd5e1;
+}
+
+/* Couple Grid Section */
+.couple-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.profile-box {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: rgba(5, 8, 17, 0.5);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.groom-box { border: 1px solid rgba(255, 0, 60, 0.3); }
+.bride-box { border: 1px solid rgba(0, 240, 255, 0.3); }
+
+.profile-box:hover {
+    transform: translateY(-5px);
+}
+
+.photo-frame {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.groom-box .photo-frame { border: 3px solid #ff003c; box-shadow: 0 0 15px rgba(255, 0, 60, 0.5); }
+.bride-box .photo-frame { border: 3px solid #00f0ff; box-shadow: 0 0 15px rgba(0, 240, 255, 0.5); }
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #222; /* Fallback */
+}
+
+.profile-box h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.profile-box p {
+    color: #94a3b8;
+    font-size: 15px;
+}
+
+/* Countdown Timer */
+.countdown-section {
+    margin: 40px 0;
+}
+
+.section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.time-block {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 80px;
+}
+
+.time-block span {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+    color: #00f0ff;
+}
+
+.time-block p {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-top: 5px;
+}
+
+/* Event Details Container */
+.event-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.event-box {
+    flex: 1;
+    min-width: 280px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.event-box h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.event-box .date {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.event-box .time {
+    color: #00f0ff;
+    margin-bottom: 15px;
+}
+
+.event-box .place {
+    font-size: 15px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+/* Futuristic Button */
+.cyber-btn {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ff003c;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 0, 60, 0.3);
+    margin-top: 30px;
+}
+
+.cyber-btn:hover {
+    background: #ff003c;
+    box-shadow: 0 0 25px rgba(255, 0, 60, 0.8);
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes pulse {
+    0% { transform: scale(1); filter: drop-shadow(0 0 8px #ff003c); }
+    100% { transform: scale(1.08); filter: drop-shadow(0 0 18px #ff003c); }
+}
+
+/* Responsive Scaling */
+@media(max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    .invitation-card { padding: 25px 15px; }
+}
